@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ressources - LOXO | Guides & Outils pour votre Projet Web</title>
+    <meta name="description" content="Découvrez nos guides, outils et ressources pour optimiser votre projet web. Templates gratuits, calculateurs et conseils d'experts LOXO." />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Floxoportf5027back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.7"></script>
+</head>
+<body class="bg-background text-text-primary">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-surface/80 backdrop-blur-md border-b border-border-light">
+        <div class="container-max">
+            <div class="flex items-center justify-between py-4">
+                <!-- Logo -->
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 gradient-primary rounded-lg flex items-center justify-center">
+                        <span class="text-white font-bold text-xl">L</span>
+                    </div>
+                    <span class="text-2xl font-bold gradient-text">LOXO</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-smooth">Accueil</a>
+                    <a href="services.html" class="text-text-secondary hover:text-primary transition-smooth">Services</a>
+                    <a href="resources.html" class="text-primary font-semibold">Ressources</a>
+                    <a href="contact.html" class="btn-primary">Contact</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="homepage.html" class="text-text-secondary">Accueil</a>
+                    <a href="services.html" class="text-text-secondary">Services</a>
+                    <a href="resources.html" class="text-primary font-semibold">Ressources</a>
+                    <a href="contact.html" class="btn-primary inline-block text-center">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative pt-24 pb-16 overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,<svg width=" 60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><g fill="%239333ea" fill-opacity="0.4"><circle cx="30" cy="30" r="2"></circle></g>'); background-size: 60px 60px;"></g></div>
+        </div>
+
+        <div class="container-max relative z-10">
+            <div class="text-center mb-16 reveal">
+                <h1 class="text-4xl md:text-6xl font-bold mb-6">
+                    Centre de <span class="gradient-text">Ressources</span>
+                </h1>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Guides, outils et conseils d'experts pour optimiser votre projet web et maximiser votre retour sur investissement digital.
+                </p>
+            </div>
+
+            <!-- Quick Tools -->
+
+            <div class="grid md:grid-cols-3 gap-6 mb-16">
+                <!-- Performance Checker -->
+                <div class="card group hover:shadow-large transition-all duration-500 reveal">
+                    <div class="text-center">
+                        <div class="w-16 h-16 gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Test de Performance</h3>
+                        <p class="text-text-secondary mb-4">Analysez la vitesse et les performances de votre site web en temps réel.</p>
+                        <button onclick="openPerformanceChecker()" class="btn-primary w-full">Tester maintenant</button>
+                    </div>
+                </div>
+<br><br><br> 
+                <!-- SEO Audit -->
+                <div class="card group hover:shadow-large transition-all duration-500 reveal">
+                    <div class="text-center">
+                        <div class="w-16 h-16 gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Audit SEO</h3>
+                        <p class="text-text-secondary mb-4">Évaluez l'optimisation SEO de votre site et obtenez des recommandations.</p>
+                        <button onclick="openSEOAudit()" class="btn-primary w-full">Analyser</button>
+                    </div>
+                </div>
+
+
+    </section>
+
+
+    <!-- Newsletter Section -->
+    <section class="section-padding bg-surface">
+        <div class="container-max">
+            <div class="max-w-4xl mx-auto text-center reveal">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Restez <span class="gradient-text">informé</span>
+                </h2>
+                <p class="text-xl text-text-secondary mb-8">
+                    Recevez nos derniers guides, conseils et outils directement dans votre boîte mail.
+                </p>
+                
+                <div class="max-w-md mx-auto">
+                    <div class="flex gap-4">
+                        <input type="email" id="newsletter-email" class="input-field flex-1" placeholder="votre@email.com" />
+                        <button onclick="subscribeNewsletter()" class="btn-primary whitespace-nowrap">
+                            S'abonner
+                        </button>
+                    </div>
+                    <p class="text-sm text-text-secondary mt-3">
+                        ✨ Pas de spam, désinscription en un clic
+                    </p>
+                </div>
+
+                <!-- Newsletter Benefits -->
+                <div class="grid md:grid-cols-3 gap-6 mt-12">
+                    <div class="text-center">
+                        <div class="w-12 h-12 gradient-primary rounded-full flex items-center justify-center mx-auto mb-3">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold mb-2">Guides exclusifs</h4>
+                        <p class="text-text-secondary text-sm">Accès prioritaire à nos nouveaux guides et ressources</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-12 h-12 gradient-primary rounded-full flex items-center justify-center mx-auto mb-3">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold mb-2">Conseils d'expert</h4>
+                        <p class="text-text-secondary text-sm">Tips et astuces pour optimiser votre présence web</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-12 h-12 gradient-primary rounded-full flex items-center justify-center mx-auto mb-3">
+                            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h4 class="font-bold mb-2">Veille technologique</h4>
+                        <p class="text-text-secondary text-sm">Les dernières tendances et innovations web</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding bg-background">
+        <div class="container-max">
+            <div class="text-center reveal">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                    Prêt à passer à l'<span class="gradient-text">action</span> ?
+                </h2>
+                <p class="text-xl text-text-secondary mb-8 max-w-3xl mx-auto">
+                    Utilisez ces ressources pour préparer votre projet, puis contactez-nous pour le concrétiser.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
+                    <a href="contact.html" class="btn-primary text-lg px-8 py-4">
+                        Démarrer votre projet
+                        <svg class="w-5 h-5 ml-2 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                        </svg>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-text-primary text-white section-padding">
+        <div class="container-max">
+            <div class="grid md:grid-cols-4 gap-8 mb-12">
+                <!-- Company Info -->
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="w-10 h-10 gradient-primary rounded-lg flex items-center justify-center">
+                            <span class="text-white font-bold text-xl">L</span>
+                        </div>
+                        <span class="text-2xl font-bold">LOXO</span>
+                    </div>
+                    <p class="text-gray-300 mb-6 max-w-md">
+                        Développeur web premium spécialisé dans la création de sites performants qui génèrent des résultats mesurables pour votre entreprise.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-white transition-smooth">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-white transition-smooth">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M22.46 6c-.77.35-1.6.58-2.46.69.88-.53 1.56-1.37 1.88-2.38-.83.5-1.75.85-2.72 1.05C18.37 4.5 17.26 4 16 4c-2.35 0-4.27 1.92-4.27 4.29 0 .34.04.67.11.98C8.28 9.09 5.11 7.38 3 4.79c-.37.63-.58 1.37-.58 2.15 0 1.49.75 2.81 1.91 3.56-.71 0-1.37-.2-1.95-.5v.03c0 2.08 1.48 3.82 3.44 4.21a4.22 4.22 0 0 1-1.93.07 4.28 4.28 0 0 0 4 2.98 8.521 8.521 0 0 1-5.33 1.84c-.34 0-.68-.02-1.02-.06C3.44 20.29 5.7 21 8.12 21 16 21 20.33 14.46 20.33 8.79c0-.19 0-.37-.01-.56.84-.6 1.56-1.36 2.14-2.23z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-white transition-smooth">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="javascript:void(0)" class="text-gray-300 hover:text-white transition-smooth">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Navigation</h4>
+                    <ul class="space-y-2">
+                        <li><a href="homepage.html" class="text-gray-300 hover:text-white transition-smooth">Accueil</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-white transition-smooth">Services</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-white transition-smooth">Contact</a></li>
+                        <li><a href="resources.html" class="text-gray-300 hover:text-white transition-smooth">Ressources</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-300">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                            </svg>
+                            contact@loxo.dev
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                            </svg>
+                            +33 1 23 45 67 89
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                            </svg>
+                            Paris, France
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 pt-8 text-center">
+                <p class="text-gray-300">
+                    © 2025 LOXO. Tous droits réservés. | 
+                    <a href="javascript:void(0)" class="hover:text-white transition-smooth">Mentions légales</a> | 
+                    <a href="javascript:void(0)" class="hover:text-white transition-smooth">Politique de confidentialité</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    <!-- Performance Checker Modal -->
+    <div id="performance-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="text-2xl font-bold">Analyseur de Performance Web</h3>
+                    <button onclick="closeModal('performance-modal')" class="text-gray-400 hover:text-gray-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">URL à analyser</label>
+                        <input type="url" id="modal-performance-url" class="input-field" placeholder="https://votre-site.com" />
+                    </div>
+                    <button onclick="runDetailedPerformanceTest()" class="btn-primary w-full">
+                        Lancer l'analyse complète
+                    </button>
+                </div>
+
+                <div id="detailed-performance-results" class="mt-6 hidden">
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h4 class="font-bold mb-4">Rapport détaillé</h4>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-success mb-1">92</div>
+                                <div class="text-xs text-text-secondary">Performance</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-warning mb-1">78</div>
+                                <div class="text-xs text-text-secondary">SEO</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-success mb-1">95</div>
+                                <div class="text-xs text-text-secondary">Accessibilité</div>
+                            </div>
+                            <div class="text-center">
+                                <div class="text-2xl font-bold text-success mb-1">88</div>
+                                <div class="text-xs text-text-secondary">Bonnes pratiques</div>
+                            </div>
+                        </div>
+                        
+                        <div class="space-y-4">
+                            <div class="p-4 bg-success-50 rounded-lg">
+                                <h5 class="font-semibold text-success mb-2">✅ Points forts</h5>
+                                <ul class="text-sm text-text-secondary space-y-1">
+                                    <li>• Images optimisées</li>
+                                    <li>• Code CSS minifié</li>
+                                    <li>• HTTPS activé</li>
+                                </ul>
+                            </div>
+                            <div class="p-4 bg-warning-50 rounded-lg">
+                                <h5 class="font-semibold text-warning mb-2">⚠️ Améliorations possibles</h5>
+                                <ul class="text-sm text-text-secondary space-y-1">
+                                    <li>• Réduire le JavaScript non utilisé</li>
+                                    <li>• Optimiser les polices web</li>
+                                    <li>• Améliorer la mise en cache</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SEO Audit Modal -->
+    <div id="seo-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="text-2xl font-bold">Audit SEO Complet</h3>
+                    <button onclick="closeModal('seo-modal')" class="text-gray-400 hover:text-gray-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="space-y-4">
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">URL à auditer</label>
+                        <input type="url" id="modal-seo-url" class="input-field" placeholder="https://votre-site.com" />
+                    </div>
+                    <button onclick="runSEOAudit()" class="btn-primary w-full">
+                        Démarrer l'audit SEO
+                    </button>
+                </div>
+
+                <div id="seo-audit-results" class="mt-6 hidden">
+                    <div class="bg-gray-50 rounded-lg p-6">
+                        <h4 class="font-bold mb-4">Résultats de l'audit</h4>
+                        <div class="space-y-4">
+                            <div class="flex items-center justify-between p-3 bg-white rounded border">
+                                <span class="font-medium">Balises Title</span>
+                                <span class="text-success font-bold">✓ Optimisé</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-white rounded border">
+                                <span class="font-medium">Meta descriptions</span>
+                                <span class="text-warning font-bold">⚠ À améliorer</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-white rounded border">
+                                <span class="font-medium">Structure H1-H6</span>
+                                <span class="text-success font-bold">✓ Optimisé</span>
+                            </div>
+                            <div class="flex items-center justify-between p-3 bg-white rounded border">
+                                <span class="font-medium">Images Alt text</span>
+                                <span class="text-error font-bold">✗ Manquant</span>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6 p-4 bg-primary-50 rounded-lg">
+                            <h5 class="font-semibold text-primary mb-2">📈 Score SEO global</h5>
+                            <div class="flex items-center">
+                                <div class="text-3xl font-bold text-primary mr-4">74/100</div>
+                                <div class="text-sm text-text-secondary">
+                                    Bon potentiel d'amélioration avec quelques optimisations ciblées.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cost Calculator Modal -->
+    <div id="cost-modal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex items-center justify-between mb-6">
+                    <h3 class="text-2xl font-bold">Calculateur de Coût Avancé</h3>
+                    <button onclick="closeModal('cost-modal')" class="text-gray-400 hover:text-gray-600">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+                
+                <div class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Secteur d'activité</label>
+                        <select id="modal-industry" class="input-field">
+                            <option value="retail">Commerce/Retail</option>
+                            <option value="restaurant">Restaurant/Hôtellerie</option>
+                            <option value="services">Services professionnels</option>
+                            <option value="tech">Technologie</option>
+                            <option value="health">Santé/Bien-être</option>
+                            <option value="other">Autre</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Délai souhaité</label>
+                        <select id="modal-timeline" class="input-field">
+                            <option value="urgent">Urgent (2-4 semaines)</option>
+                            <option value="normal">Normal (6-8 semaines)</option>
+                            <option value="flexible">Flexible (10+ semaines)</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Fonctionnalités avancées</label>
+                        <div class="space-y-2">
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2 advanced-feature" data-cost="800" /> Système de réservation
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2 advanced-feature" data-cost="600" /> Multilingue
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2 advanced-feature" data-cost="1200" /> Intégration CRM
+                            </label>
+                            <label class="flex items-center">
+                                <input type="checkbox" class="mr-2 advanced-feature" data-cost="400" /> Blog intégré
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-8 bg-gradient-to-r from-primary to-secondary text-white rounded-lg p-6">
+                    <div class="text-center">
+                        <div class="text-sm opacity-90 mb-2">Estimation détaillée</div>
+                        <div class="text-4xl font-bold mb-4" id="modal-total-cost">2 400€</div>
+                        <div class="grid grid-cols-2 gap-4 text-sm opacity-90 mb-4">
+                            <div>Développement: <span class="font-bold" id="dev-cost">1 800€</span></div>
+                            <div>Design: <span class="font-bold" id="design-cost">600€</span></div>
+                        </div>
+                        <a href="contact.html" class="btn-secondary w-full bg-white text-primary hover:bg-gray-100">
+                            Obtenir un devis personnalisé
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Resource filtering
+        function filterResources(category) {
+            const items = document.querySelectorAll('.resource-item');
+            const buttons = document.querySelectorAll('.filter-btn');
+            
+            // Update active button
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Filter items
+            items.forEach(item => {
+                if (category === 'all' || item.dataset.category === category) {
+                    item.style.display = 'block';
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                        item.style.transform = 'translateY(0)';
+                    }, 100);
+                } else {
+                    item.style.opacity = '0';
+                    item.style.transform = 'translateY(20px)';
+                    setTimeout(() => {
+                        item.style.display = 'none';
+                    }, 300);
+                }
+            });
+        }
+
+        // Modal functions
+        function openPerformanceChecker() {
+            document.getElementById('performance-modal').classList.remove('hidden');
+        }
+
+        function openSEOAudit() {
+            document.getElementById('seo-modal').classList.remove('hidden');
+        }
+
+        function openCostCalculator() {
+            document.getElementById('cost-modal').classList.remove('hidden');
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.add('hidden');
+        }
+
+        // Performance test functions
+        function runPerformanceTest() {
+            const url = document.getElementById('performance-url').value;
+            if (!url) {
+                alert('Veuillez entrer une URL valide');
+                return;
+            }
+            
+            // Simulate loading
+            const button = event.target;
+            const originalText = button.innerHTML;
+            button.innerHTML = 'Analyse en cours...';
+            button.disabled = true;
+            
+            setTimeout(() => {
+                // Show results with random but realistic values
+                const score = Math.floor(Math.random() * 30) + 70;
+                const loadTime = (Math.random() * 2 + 1).toFixed(1);
+                
+                document.getElementById('performance-score').textContent = score;
+                document.getElementById('load-time').textContent = loadTime + 's';
+                
+                const recommendations = [
+                    'Optimisez vos images pour améliorer le temps de chargement.',
+                    'Réduisez le JavaScript non utilisé pour de meilleures performances.',
+                    'Activez la compression GZIP sur votre serveur.',
+                    'Utilisez un CDN pour accélérer la livraison de contenu.'
+                ];
+                
+                document.getElementById('performance-recommendation').textContent = 
+                    recommendations[Math.floor(Math.random() * recommendations.length)];
+                
+                document.getElementById('performance-results').classList.remove('hidden');
+                button.innerHTML = originalText;
+                button.disabled = false;
+            }, 2000);
+        }
+
+        function runDetailedPerformanceTest() {
+            const url = document.getElementById('modal-performance-url').value;
+            if (!url) {
+                alert('Veuillez entrer une URL valide');
+                return;
+            }
+            
+            const button = event.target;
+            button.innerHTML = 'Analyse en cours...';
+            button.disabled = true;
+            
+            setTimeout(() => {
+                document.getElementById('detailed-performance-results').classList.remove('hidden');
+                button.innerHTML = 'Lancer l\'analyse complète';
+                button.disabled = false;
+            }, 3000);
+        }
+
+        function runSEOAudit() {
+            const url = document.getElementById('modal-seo-url').value;
+            if (!url) {
+                alert('Veuillez entrer une URL valide');
+                return;
+            }
+            
+            const button = event.target;
+            button.innerHTML = 'Audit en cours...';
+            button.disabled = true;
+            
+            setTimeout(() => {
+                document.getElementById('seo-audit-results').classList.remove('hidden');
+                button.innerHTML = 'Démarrer l\'audit SEO';
+                button.disabled = false;
+            }, 2500);
+        }
+
+        // Cost calculator
+        function updateCostCalculator() {
+            const projectType = document.getElementById('project-type').value;
+            const pageCount = parseInt(document.getElementById('page-count').value);
+            const features = document.querySelectorAll('.feature-checkbox:checked');
+            
+            let baseCost = 0;
+            switch(projectType) {
+                case 'vitrine': baseCost = 800; break;
+                case 'ecommerce': baseCost = 1500; break;
+                case 'custom': baseCost = 2500; break;
+            }
+            
+            const pageCost = Math.max(0, (pageCount - 5)) * 50;
+            let featureCost = 0;
+            features.forEach(feature => {
+                featureCost += parseInt(feature.dataset.cost);
+            });
+            
+            const total = baseCost + pageCost + featureCost;
+            document.getElementById('total-cost').textContent = total.toLocaleString('fr-FR') + '€';
+        }
+
+        // Template downloads
+        function downloadTemplate(type) {
+            const templates = {
+                'planning': 'Template_Planification_Projet_Web_LOXO.pdf',
+                'audit': 'Checklist_Audit_Site_Web_LOXO.pdf'
+            };
+            
+            // Simulate download
+            alert(`Téléchargement de ${templates[type]} démarré !`);
+        }
+
+        // Newsletter subscription
+        function subscribeNewsletter() {
+            const email = document.getElementById('newsletter-email').value;
+            if (!email || !email.includes('@')) {
+                alert('Veuillez entrer une adresse email valide');
+                return;
+            }
+            
+            // Simulate subscription
+            alert('Merci ! Vous êtes maintenant abonné à notre newsletter.');
+            document.getElementById('newsletter-email').value = '';
+        }
+
+        // Load more resources
+        function loadMoreResources() {
+            // Simulate loading more resources
+            alert('Chargement de nouvelles ressources... (Fonctionnalité à venir)');
+        }
+
+        // Event listeners
+        document.addEventListener('DOMContentLoaded', function() {
+            // Page count slider
+            const pageSlider = document.getElementById('page-count');
+            const pageDisplay = document.getElementById('page-display');
+            
+            if (pageSlider && pageDisplay) {
+                pageSlider.addEventListener('input', function() {
+                    pageDisplay.textContent = this.value + ' pages';
+                    updateCostCalculator();
+                });
+            }
+            
+            // Feature checkboxes
+            const featureCheckboxes = document.querySelectorAll('.feature-checkbox');
+            featureCheckboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', updateCostCalculator);
+            });
+            
+            // Project type selector
+            const projectTypeSelect = document.getElementById('project-type');
+            if (projectTypeSelect) {
+                projectTypeSelect.addEventListener('change', updateCostCalculator);
+            }
+            
+            // Advanced features in modal
+            const advancedFeatures = document.querySelectorAll('.advanced-feature');
+            advancedFeatures.forEach(feature => {
+                feature.addEventListener('change', function() {
+                    let total = 2400; // Base cost
+                    const checkedFeatures = document.querySelectorAll('.advanced-feature:checked');
+                    checkedFeatures.forEach(f => {
+                        total += parseInt(f.dataset.cost);
+                    });
+                    document.getElementById('modal-total-cost').textContent = total.toLocaleString('fr-FR') + '€';
+                });
+            });
+            
+            // Initial cost calculation
+            updateCostCalculator();
+        });
+
+        // Reveal animation on scroll
+        const revealElements = document.querySelectorAll('.reveal');
+        
+        const revealObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        revealElements.forEach(element => {
+            revealObserver.observe(element);
+        });
+
+        // Close modals on outside click
+        document.addEventListener('click', function(e) {
+            if (e.target.classList.contains('fixed') && e.target.classList.contains('inset-0')) {
+                e.target.classList.add('hidden');
+            }
+        });
+    </script>
+
+    <style>
+        .filter-btn {
+            @apply px-4 py-2 rounded-full border border-border text-text-secondary hover:text-primary hover:border-primary transition-smooth;
+        }
+
+        .filter-btn.active {
+            @apply bg-primary text-white border-primary;
+        }
+
+        .resource-item {
+            transition: all 0.3s ease;
+        }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, var(--color-primary), var(--color-secondary));
+            border-radius: 4px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: linear-gradient(135deg, var(--color-primary-700), var(--color-secondary-700));
+        }
+
+        /* Modal animations */
+        .fixed.inset-0 {
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        .fixed.inset-0 > div {
+            animation: slideUp 0.3s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideUp {
+            from { 
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to { 
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
